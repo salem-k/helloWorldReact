@@ -28,9 +28,6 @@ import { MIconButton } from '~/@material-extend';
 
 // ----------------------------------------------------------------------
 
-import { useHistory } from "react-router-dom";
-
-
 const useStyles = makeStyles(theme => ({
   root: {
     [theme.breakpoints.up('md')]: {
@@ -69,8 +66,6 @@ const useStyles = makeStyles(theme => ({
 // ----------------------------------------------------------------------
 
 function LoginView() {
-  const history = useHistory();
-
   const classes = useStyles();
   const firebase = useFirebase();
   const isMountedRef = useIsMountedRef();
@@ -107,7 +102,6 @@ function LoginView() {
         if (isMountedRef.current) {
           setSubmitting(false);
         }
-        history.push("/auth/register");
       } catch (err) {
         if (isMountedRef.current) {
           setSubmitting(false);
@@ -135,7 +129,7 @@ function LoginView() {
               underline="none"
               variant="subtitle2"
               component={RouterLink}
-              to={PATH_PAGE.auth.signup}
+              to={PATH_PAGE.auth.register}
             >
               Get started
             </Link>
@@ -158,6 +152,20 @@ function LoginView() {
             </Typography>
           </Box>
 
+          <SocialLogin firebase={firebase} />
+
+          <Divider className={classes.divider}>
+            <Typography variant="body2" color="textSecondary">
+              OR
+            </Typography>
+          </Divider>
+
+          <Box sx={{ mb: 5 }}>
+            <Alert severity="info">
+              Use email : <strong>demo@minimals.cc</strong> / password :
+              <strong>&nbsp;demo1234</strong>
+            </Alert>
+          </Box>
 
           <LoginForm formik={formik} />
 
@@ -166,7 +174,7 @@ function LoginView() {
               Don’t have an account?&nbsp;
               <Link
                 variant="subtitle2"
-                to={PATH_PAGE.auth.signup}
+                to={PATH_PAGE.auth.register}
                 component={RouterLink}
               >
                 Get started

@@ -57,12 +57,12 @@ const routes = [
   {
     exact: true,
     path: PATH_APP.newRouting1,
-    component: lazy(() => import('src/views/ComponentApp1'))
+    component: lazy(() => import('~/views/ComponentApp1'))
   },
   {
     exact: true,
     path: PATH_DOCS.newRouting1,
-    component: lazy(() => import('src/views/ComponentDocs1'))
+    component: lazy(() => import('~/views/ComponentDocs1'))
   },
   // Redirect(optional)
   {

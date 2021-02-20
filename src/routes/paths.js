@@ -13,9 +13,7 @@ const ROOTS = {
 export const PATH_PAGE = {
   auth: {
     root: ROOTS.auth,
-    linkedin: path(ROOTS.auth, '/linkedin'),
     login: path(ROOTS.auth, '/login'),
-    signup: path(ROOTS.auth, '/signup'),
     loginUnprotected: path(ROOTS.auth, '/login-unprotected'),
     register: path(ROOTS.auth, '/register'),
     registerUnprotected: path(ROOTS.auth, '/register-unprotected'),

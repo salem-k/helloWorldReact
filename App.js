@@ -11,16 +11,15 @@ const styles = StyleSheet.create({
   },
 });
 
-import React from 'react';
-import ThemeConfig from './theme';
+import ThemeConfig from './src/theme';
 import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
-import routes, { renderRoutes } from '~/routes';
-import ScrollToTop from '~/components/ScrollToTop';
-import GoogleAnalytics from '~/components/GoogleAnalytics';
+import routes, { renderRoutes } from './src/routes';
+import ScrollToTop from './src/components/ScrollToTop';
+import GoogleAnalytics from './src/components/GoogleAnalytics';
 import AdapterDateFns from '@material-ui/lab/AdapterDateFns';
-import NotistackProvider from '~/components/NotistackProvider';
-import FirebaseProvider from '~/components/Auth/FirebaseProvider';
+import NotistackProvider from './src/components/NotistackProvider';
+import FirebaseProvider from './src/components/Auth/FirebaseProvider';
 import LocalizationProvider from '@material-ui/lab/LocalizationProvider';
 
 // ----------------------------------------------------------------------

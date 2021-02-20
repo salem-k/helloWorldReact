@@ -16,17 +16,17 @@ const AppRoutes = {
     {
       exact: true,
       path: PATH_APP.main.dashboard,
-      component: lazy(() => import('src/views/general/DashboardAppView'))
+      component: lazy(() => import('~/views/general/DashboardAppView'))
     },
     {
       exact: true,
       path: PATH_APP.main.ecommerce,
-      component: lazy(() => import('src/views/general/DashboardEcommerceView'))
+      component: lazy(() => import('~/views/general/DashboardEcommerceView'))
     },
     {
       exact: true,
       path: PATH_APP.main.analytics,
-      component: lazy(() => import('src/views/general/DashboardAnalyticsView'))
+      component: lazy(() => import('~/views/general/DashboardAnalyticsView'))
     },
     {
       exact: true,
@@ -123,7 +123,7 @@ const AppRoutes = {
     {
       exact: true,
       path: PATH_APP.app.chat.conversation,
-      component: lazy(() => import('src/views/app/ChatView'))
+      component: lazy(() => import('~/views/app/ChatView'))
     },
     {
       exact: true,
@@ -136,7 +136,7 @@ const AppRoutes = {
     {
       exact: true,
       path: PATH_APP.app.mail.labels,
-      component: lazy(() => import('src/views/app/MailView'))
+      component: lazy(() => import('~/views/app/MailView'))
     },
     {
       exact: true,
@@ -149,7 +149,7 @@ const AppRoutes = {
     {
       exact: true,
       path: PATH_APP.app.calendar,
-      component: lazy(() => import('src/views/app/CalendarView'))
+      component: lazy(() => import('~/views/app/CalendarView'))
     },
 
     // FOUNDATIONS
@@ -157,29 +157,29 @@ const AppRoutes = {
     {
       exact: true,
       path: PATH_APP.foundations.colors,
-      component: lazy(() => import('src/views/uikit/foundations/ColorsView'))
+      component: lazy(() => import('~/views/uikit/foundations/ColorsView'))
     },
     {
       exact: true,
       path: PATH_APP.foundations.typography,
       component: lazy(() =>
-        import('src/views/uikit/foundations/TypographyView')
+        import('~/views/uikit/foundations/TypographyView')
       )
     },
     {
       exact: true,
       path: PATH_APP.foundations.shadows,
-      component: lazy(() => import('src/views/uikit/foundations/ShadowsView'))
+      component: lazy(() => import('~/views/uikit/foundations/ShadowsView'))
     },
     {
       exact: true,
       path: PATH_APP.foundations.grid,
-      component: lazy(() => import('src/views/uikit/foundations/GridView'))
+      component: lazy(() => import('~/views/uikit/foundations/GridView'))
     },
     {
       exact: true,
       path: PATH_APP.foundations.icons,
-      component: lazy(() => import('src/views/uikit/foundations/IconsView'))
+      component: lazy(() => import('~/views/uikit/foundations/IconsView'))
     },
     {
       exact: true,
@@ -192,148 +192,148 @@ const AppRoutes = {
     {
       exact: true,
       path: PATH_APP.components.accordion,
-      component: lazy(() => import('src/views/uikit/components/AccordionView'))
+      component: lazy(() => import('~/views/uikit/components/AccordionView'))
     },
     {
       exact: true,
       path: PATH_APP.components.alert,
-      component: lazy(() => import('src/views/uikit/components/AlertView'))
+      component: lazy(() => import('~/views/uikit/components/AlertView'))
     },
     {
       exact: true,
       path: PATH_APP.components.autocomplete,
       component: lazy(() =>
-        import('src/views/uikit/components/AutocompleteView')
+        import('~/views/uikit/components/AutocompleteView')
       )
     },
     {
       exact: true,
       path: PATH_APP.components.avatar,
-      component: lazy(() => import('src/views/uikit/components/AvatarView'))
+      component: lazy(() => import('~/views/uikit/components/AvatarView'))
     },
     {
       exact: true,
       path: PATH_APP.components.badge,
-      component: lazy(() => import('src/views/uikit/components/BadgeView'))
+      component: lazy(() => import('~/views/uikit/components/BadgeView'))
     },
     {
       exact: true,
       path: PATH_APP.components.breadcrumbs,
-      component: lazy(() => import('src/views/uikit/components/BreadcrumbView'))
+      component: lazy(() => import('~/views/uikit/components/BreadcrumbView'))
     },
     {
       exact: true,
       path: PATH_APP.components.buttons,
-      component: lazy(() => import('src/views/uikit/components/ButtonsView'))
+      component: lazy(() => import('~/views/uikit/components/ButtonsView'))
     },
     {
       exact: true,
       path: PATH_APP.components.chip,
-      component: lazy(() => import('src/views/uikit/components/ChipsView'))
+      component: lazy(() => import('~/views/uikit/components/ChipsView'))
     },
     {
       exact: true,
       path: PATH_APP.components.dialog,
-      component: lazy(() => import('src/views/uikit/components/DialogView'))
+      component: lazy(() => import('~/views/uikit/components/DialogView'))
     },
     {
       exact: true,
       path: PATH_APP.components.textfield,
-      component: lazy(() => import('src/views/uikit/components/TextFieldView'))
+      component: lazy(() => import('~/views/uikit/components/TextFieldView'))
     },
     {
       exact: true,
       path: PATH_APP.components.label,
-      component: lazy(() => import('src/views/uikit/components/LabelView'))
+      component: lazy(() => import('~/views/uikit/components/LabelView'))
     },
     {
       exact: true,
       path: PATH_APP.components.lists,
-      component: lazy(() => import('src/views/uikit/components/ListsView'))
+      component: lazy(() => import('~/views/uikit/components/ListsView'))
     },
     {
       exact: true,
       path: PATH_APP.components.menu,
-      component: lazy(() => import('src/views/uikit/components/MenusView'))
+      component: lazy(() => import('~/views/uikit/components/MenusView'))
     },
     {
       exact: true,
       path: PATH_APP.components.pagination,
-      component: lazy(() => import('src/views/uikit/components/PaginationView'))
+      component: lazy(() => import('~/views/uikit/components/PaginationView'))
     },
     {
       exact: true,
       path: PATH_APP.components.pickers,
-      component: lazy(() => import('src/views/uikit/components/PickersView'))
+      component: lazy(() => import('~/views/uikit/components/PickersView'))
     },
     {
       exact: true,
       path: PATH_APP.components.popover,
-      component: lazy(() => import('src/views/uikit/components/PopoverView'))
+      component: lazy(() => import('~/views/uikit/components/PopoverView'))
     },
     {
       exact: true,
       path: PATH_APP.components.progress,
-      component: lazy(() => import('src/views/uikit/components/ProgressView'))
+      component: lazy(() => import('~/views/uikit/components/ProgressView'))
     },
     {
       exact: true,
       path: PATH_APP.components.rating,
-      component: lazy(() => import('src/views/uikit/components/RatingView'))
+      component: lazy(() => import('~/views/uikit/components/RatingView'))
     },
     {
       exact: true,
       path: PATH_APP.components.selectionControls,
       component: lazy(() =>
-        import('src/views/uikit/components/SelectionControlsView')
+        import('~/views/uikit/components/SelectionControlsView')
       )
     },
     {
       exact: true,
       path: PATH_APP.components.snackbar,
-      component: lazy(() => import('src/views/uikit/components/SnackbarView'))
+      component: lazy(() => import('~/views/uikit/components/SnackbarView'))
     },
     {
       exact: true,
       path: PATH_APP.components.slider,
-      component: lazy(() => import('src/views/uikit/components/SliderView'))
+      component: lazy(() => import('~/views/uikit/components/SliderView'))
     },
     {
       exact: true,
       path: PATH_APP.components.stepper,
-      component: lazy(() => import('src/views/uikit/components/StepperView'))
+      component: lazy(() => import('~/views/uikit/components/StepperView'))
     },
     {
       exact: true,
       path: PATH_APP.components.tabs,
-      component: lazy(() => import('src/views/uikit/components/TabsView'))
+      component: lazy(() => import('~/views/uikit/components/TabsView'))
     },
     {
       exact: true,
       path: PATH_APP.components.table,
-      component: lazy(() => import('src/views/uikit/components/TableView'))
+      component: lazy(() => import('~/views/uikit/components/TableView'))
     },
     {
       exact: true,
       path: PATH_APP.components.timeline,
-      component: lazy(() => import('src/views/uikit/components/TimelineView'))
+      component: lazy(() => import('~/views/uikit/components/TimelineView'))
     },
     {
       exact: true,
       path: PATH_APP.components.tooltip,
-      component: lazy(() => import('src/views/uikit/components/TooltipView'))
+      component: lazy(() => import('~/views/uikit/components/TooltipView'))
     },
     {
       exact: true,
       path: PATH_APP.components.transferList,
       component: lazy(() =>
-        import('src/views/uikit/components/TransferListView')
+        import('~/views/uikit/components/TransferListView')
       )
     },
     {
       exact: true,
       path: PATH_APP.components.treeView,
-      component: lazy(() => import('src/views/uikit/components/TreesView'))
+      component: lazy(() => import('~/views/uikit/components/TreesView'))
     },
 
     // EXTRA COMPONENTS
@@ -342,63 +342,63 @@ const AppRoutes = {
       exact: true,
       path: PATH_APP.components.chart.apexcharts,
       component: lazy(() =>
-        import('src/views/uikit/extra-components/ChartsView/Apexcharts')
+        import('~/views/uikit/extra-components/ChartsView/Apexcharts')
       )
     },
     {
       exact: true,
       path: PATH_APP.components.chart.recharts,
       component: lazy(() =>
-        import('src/views/uikit/extra-components/ChartsView/Recharts')
+        import('~/views/uikit/extra-components/ChartsView/Recharts')
       )
     },
     {
       exact: true,
       path: PATH_APP.components.map.google,
       component: lazy(() =>
-        import('src/views/uikit/extra-components/MapView/GoogleMaps')
+        import('~/views/uikit/extra-components/MapView/GoogleMaps')
       )
     },
     {
       exact: true,
       path: PATH_APP.components.map.mapbox,
       component: lazy(() =>
-        import('src/views/uikit/extra-components/MapView/ReactMapGL')
+        import('~/views/uikit/extra-components/MapView/ReactMapGL')
       )
     },
     {
       exact: true,
       path: PATH_APP.components.editor,
       component: lazy(() =>
-        import('src/views/uikit/extra-components/EditorView')
+        import('~/views/uikit/extra-components/EditorView')
       )
     },
     {
       exact: true,
       path: PATH_APP.components.copyToClipboard,
       component: lazy(() =>
-        import('src/views/uikit/extra-components/CopyToClipboardView')
+        import('~/views/uikit/extra-components/CopyToClipboardView')
       )
     },
     {
       exact: true,
       path: PATH_APP.components.upload,
       component: lazy(() =>
-        import('src/views/uikit/extra-components/UploadView')
+        import('~/views/uikit/extra-components/UploadView')
       )
     },
     {
       exact: true,
       path: PATH_APP.components.carousel,
       component: lazy(() =>
-        import('src/views/uikit/extra-components/CarouselView')
+        import('~/views/uikit/extra-components/CarouselView')
       )
     },
     {
       exact: true,
       path: PATH_APP.components.multiLanguage,
       component: lazy(() =>
-        import('src/views/uikit/extra-components/MultiLanguageView')
+        import('~/views/uikit/extra-components/MultiLanguageView')
       )
     },
     {

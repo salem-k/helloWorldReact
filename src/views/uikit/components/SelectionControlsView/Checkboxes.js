@@ -81,7 +81,7 @@ function Checkboxes() {
 
           <Grid item xs={12}>
             <Block title="Placement">
-              <FormControl component="fieldset">
+              <FormControl >
                 <FormGroup aria-label="position" row>
                   <FormControlLabel
                     value="top"
@@ -154,7 +154,7 @@ function Checkboxes() {
                 </Grid>
 
                 <Grid item xs={12} sm={6}>
-                  <FormControl component="fieldset">
+                  <FormControl>
                     <FormGroup>
                       <FormControlLabel
                         control={

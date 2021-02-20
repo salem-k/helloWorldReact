@@ -93,22 +93,24 @@ const routes = [
   // Others Routes
   {
     exact: true,
-    path: PATH_PAGE.auth.linkedin,
-    component: lazy(() => import('~/views/auth/LinkedinView'))
-  },
-  {
-    exact: true,
-    path: PATH_PAGE.auth.signup,
-    component: lazy(() => import('~/views/auth/SignupView'))
-  },
-  {
-    exact: true,
+    guard: GuestProtect,
     path: PATH_PAGE.auth.login,
     component: lazy(() => import('~/views/auth/LoginView'))
   },
   {
     exact: true,
+    path: PATH_PAGE.auth.loginUnprotected,
+    component: lazy(() => import('~/views/auth/LoginView'))
+  },
+  {
+    exact: true,
+    guard: GuestProtect,
     path: PATH_PAGE.auth.register,
+    component: lazy(() => import('~/views/auth/RegisterView'))
+  },
+  {
+    exact: true,
+    path: PATH_PAGE.auth.registerUnprotected,
     component: lazy(() => import('~/views/auth/RegisterView'))
   },
   {
@@ -144,12 +146,12 @@ const routes = [
   {
     exact: true,
     path: PATH_PAGE.pricing,
-    component: lazy(() => import('src/views/pages/PricingView'))
+    component: lazy(() => import('~/views/pages/PricingView'))
   },
   {
     exact: true,
     path: PATH_PAGE.payment,
-    component: lazy(() => import('src/views/pages/PaymentView'))
+    component: lazy(() => import('~/views/pages/PaymentView'))
   },
   {
     exact: true,

@@ -14,7 +14,7 @@ const DocsRoutes = {
       exact: true,
       path: PATH_DOCS.introduction,
       component: lazy(() =>
-        import('src/views/docs/getting-started/IntroductionView')
+        import('~/views/docs/getting-started/IntroductionView')
       )
     },
 
@@ -22,7 +22,7 @@ const DocsRoutes = {
       exact: true,
       path: PATH_DOCS.started,
       component: lazy(() =>
-        import('src/views/docs/getting-started/QuickStartView')
+        import('~/views/docs/getting-started/QuickStartView')
       )
     },
 
@@ -30,58 +30,58 @@ const DocsRoutes = {
     {
       exact: true,
       path: PATH_DOCS.color,
-      component: lazy(() => import('src/views/docs/theme/ColorView'))
+      component: lazy(() => import('~/views/docs/theme/ColorView'))
     },
     {
       exact: true,
       path: PATH_DOCS.typography,
-      component: lazy(() => import('src/views/docs/theme/TypopgrahyView'))
+      component: lazy(() => import('~/views/docs/theme/TypopgrahyView'))
     },
     {
       exact: true,
       path: PATH_DOCS.icon,
-      component: lazy(() => import('src/views/docs/theme/IconView'))
+      component: lazy(() => import('~/views/docs/theme/IconView'))
     },
     {
       exact: true,
       path: PATH_DOCS.shadows,
-      component: lazy(() => import('src/views/docs/theme/ShadowView'))
+      component: lazy(() => import('~/views/docs/theme/ShadowView'))
     },
     {
       exact: true,
       path: PATH_DOCS.components,
-      component: lazy(() => import('src/views/docs/theme/ComponentsView'))
+      component: lazy(() => import('~/views/docs/theme/ComponentsView'))
     },
     {
       exact: true,
       path: PATH_DOCS.important,
-      component: lazy(() => import('src/views/docs/theme/ImportantView'))
+      component: lazy(() => import('~/views/docs/theme/ImportantView'))
     },
 
     // DEVELOPMENT
     {
       exact: true,
       path: PATH_DOCS.routing,
-      component: lazy(() => import('src/views/docs/development/RoutingView'))
+      component: lazy(() => import('~/views/docs/development/RoutingView'))
     },
     {
       exact: true,
       path: PATH_DOCS.environmentVariables,
       component: lazy(() =>
-        import('src/views/docs/development/EnvironmentVariablesView')
+        import('~/views/docs/development/EnvironmentVariablesView')
       )
     },
     {
       exact: true,
       path: PATH_DOCS.stateManagement,
       component: lazy(() =>
-        import('src/views/docs/development/StateManagement')
+        import('~/views/docs/development/StateManagement')
       )
     },
     {
       exact: true,
       path: PATH_DOCS.apiCalls,
-      component: lazy(() => import('src/views/docs/development/APICallsView'))
+      component: lazy(() => import('~/views/docs/development/APICallsView'))
     },
     {
       exact: true,
