@@ -1,6 +1,7 @@
 {
   "presets": [
-    "babel-preset-expo"
+    "babel-preset-expo",
+    "babel-preset-react-app"
   ],
   "plugins": [
     [

@@ -11,7 +11,15 @@ import { ReactReduxFirebaseProvider, isLoaded } from 'react-redux-firebase';
 // ----------------------------------------------------------------------
 
 if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp({
+    apiKey: "AIzaSyBdZoZoqrYekhaRnZIIChDFqvvehgKMV5A",
+    authDomain: "ionic-crud-firebase-c98e4.firebaseapp.com",
+    databaseURL: "https://ionic-crud-firebase-c98e4-default-rtdb.firebaseio.com",
+    projectId: "ionic-crud-firebase-c98e4",
+    storageBucket: "ionic-crud-firebase-c98e4.appspot.com",
+    messagingSenderId: "680115969415",
+    appId: "1:680115969415:web:d76613e4c9d5acfd538722"
+  });
   firebase.firestore();
 }
 
@@ -30,7 +38,7 @@ const ADMIN_EMAILS = ['demo@minimals.cc'];
 // ----------------------------------------------------------------------
 
 function FirebaseProvider({ children }) {
-  const { profile } = useSelector(state => state.firebase);
+  const { profile } = false //false //useSelector(state => state.firebase);
 
   useEffect(() => {
     const Initialise = async () => {

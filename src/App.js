@@ -1,5 +1,5 @@
 import React from 'react';
-import ThemeConfig from './theme';
+import ThemeConfig from '~/theme';
 import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import routes, { renderRoutes } from '~/routes';
