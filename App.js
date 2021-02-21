@@ -17,7 +17,7 @@ import '~/_mock_api_';
 import '~/utils/i18n';
 import '~/utils/highlight';
 import 'intersection-observer';
-import 'simplebar/src/simplebar.css';
+
 import 'mapbox-gl/dist/mapbox-gl.css';
 import 'slick-carousel/slick/slick.css';
 import 'react-image-lightbox/style.css';
