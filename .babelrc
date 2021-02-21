@@ -1,9 +1,16 @@
 {
   "presets": [
     "babel-preset-expo",
-    "babel-preset-react-app"
+    "@babel/preset-env",
+    "@babel/preset-react",
+    "@babel/preset-flow",
+    "babel-preset-react-app",
   ],
   "plugins": [
+    "@babel/plugin-transform-runtime"
+      ,
+        "transform-react-jsx"
+      ,
     [
       "babel-plugin-root-import",
       {

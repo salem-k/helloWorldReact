@@ -1,6 +1,6 @@
+import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
-import firebase from 'firebase/app';
 import { store } from '~/redux/store';
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
